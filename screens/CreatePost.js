@@ -52,7 +52,7 @@ export default class CreatePost extends Component {
             image_7: require("../assets/image_7.jpg")
         };
         return (
-            <View style={this.state.light_theme ? styles.containerLight : styles.container}>
+            <View style={ // styles.container}>
                 <SafeAreaView style={styles.droidSafeArea} />
                 <View style={styles.appTitle}>
                     <View style={styles.appIcon}>
@@ -62,7 +62,7 @@ export default class CreatePost extends Component {
                         ></Image>
                     </View>
                     <View style={styles.appTitleTextContainer}>
-                        <Text style={this.state.light_theme ? styles.appTitleTextLight : styles.appTitleText}>New Post</Text>
+                        <Text style={// styles.appTitleText}>New Post</Text>
                     </View>
                 </View>
                 <View style={styles.fieldsContainer}>
@@ -114,7 +114,7 @@ export default class CreatePost extends Component {
                         </View>
 
                         <TextInput
-                            style={this.state.light_theme ? styles.inputFontLight : styles.inputFont}
+                            style={// styles.inputFont}
                             onChangeText={caption => this.setState({ caption })}
                             placeholder={"Caption"}
                             placeholderTextColor={this.state.light_theme ? "black" : "white"}
